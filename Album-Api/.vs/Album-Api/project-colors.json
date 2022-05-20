@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2ffd92f1-dd63-4e04-bb4b-6590a018c29e": {
+      "ProjectGuid": "2ffd92f1-dd63-4e04-bb4b-6590a018c29e",
+      "DisplayName": "Album.Api",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
