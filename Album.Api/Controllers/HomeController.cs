@@ -3,13 +3,25 @@
 namespace Album.Api.Controllers
 {
     [ApiController]
-    //optional queryparameter name
-    [Route("[/api/hello/{name}]")]
+    //get
+    [Route("api/hello/[controller]")]
+    ///api/hello/{name}]")]
+    
     public class HelloController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
+
+        [HttpGet("{name}")]
+        public string GreetingService(string name)
+        {   
+            if (name == null || name == "" || name == " ")
+                return "Hello, World!";
+            else
+                return $"Hello, {name}!";
+        }
     }
 }
+

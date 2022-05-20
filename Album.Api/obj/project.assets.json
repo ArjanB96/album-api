@@ -198,11 +198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\album-api\\Album-Api\\Album.Api\\Album.Api.csproj",
+      "projectUniqueName": "D:\\Github\\album-api\\Album.Api\\Album.Api.csproj",
       "projectName": "Album.Api",
-      "projectPath": "D:\\Github\\album-api\\Album-Api\\Album.Api\\Album.Api.csproj",
+      "projectPath": "D:\\Github\\album-api\\Album.Api\\Album.Api.csproj",
       "packagesPath": "C:\\Users\\Aart\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\album-api\\Album-Api\\Album.Api\\obj\\",
+      "outputPath": "D:\\Github\\album-api\\Album.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aart\\AppData\\Roaming\\NuGet\\NuGet.Config",
