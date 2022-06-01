@@ -32,7 +32,7 @@ namespace Album.Api.Tests
             string greetingWhitespace = GreetingService.Greet(nameWhitespace);
             string greetingNull = GreetingService.Greet(nameNull);
 
-            // Then
+            // Then 
             Assert.Equal("Hello World!", greetingEmpty);
             Assert.Equal("Hello World!", greetingWhitespace);
             Assert.Equal("Hello World!", greetingNull);
