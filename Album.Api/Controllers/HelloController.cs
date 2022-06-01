@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
-using Album.Api.Services;
 
 // https://localhost:5011/api/hello?name=Arjan To test
 

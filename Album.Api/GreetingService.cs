@@ -1,6 +1,6 @@
 using System;
 
-namespace Album.Api.Services
+namespace Album.Api
 {
     public static class GreetingService
     {
