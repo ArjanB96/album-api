@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "xunit": "^0.0.11"
+  }
+}
