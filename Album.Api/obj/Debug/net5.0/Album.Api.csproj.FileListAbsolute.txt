@@ -25,3 +25,4 @@ D:\Github\album-api\Album.Api\obj\Debug\net5.0\album.api.dll
 D:\Github\album-api\Album.Api\obj\Debug\net5.0\ref\album.api.dll
 D:\Github\album-api\Album.Api\obj\Debug\net5.0\album.api.pdb
 D:\Github\album-api\album.api\obj\Debug\net5.0\album.api.genruntimeconfig.cache
+D:\Github\album-api\Album.Api\obj\Debug\net5.0\Album.Api.csproj.AssemblyReference.cache

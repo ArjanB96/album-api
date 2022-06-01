@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\album-api\\album.api.Tests\\Album.Api.Tests.csproj": {}
+    "D:\\Github\\album-api\\album.api.Tests\\album.api.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Github\\album-api\\album.api.Tests\\Album.Api.Tests.csproj": {
+    "D:\\Github\\album-api\\album.api.Tests\\album.api.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\album-api\\album.api.Tests\\Album.Api.Tests.csproj",
-        "projectName": "Album.Api.Tests",
-        "projectPath": "D:\\Github\\album-api\\album.api.Tests\\Album.Api.Tests.csproj",
+        "projectUniqueName": "D:\\Github\\album-api\\album.api.Tests\\album.api.Tests.csproj",
+        "projectName": "album.api.Tests",
+        "projectPath": "D:\\Github\\album-api\\album.api.Tests\\album.api.Tests.csproj",
         "packagesPath": "C:\\Users\\Aart\\.nuget\\packages\\",
         "outputPath": "D:\\Github\\album-api\\album.api.Tests\\obj\\",
         "projectStyle": "PackageReference",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Github\\album-api\\album.api\\album.api.csproj": {
-                "projectPath": "D:\\Github\\album-api\\album.api\\album.api.csproj"
+              "D:\\Github\\album-api\\Album.Api\\Album.Api.csproj": {
+                "projectPath": "D:\\Github\\album-api\\Album.Api\\Album.Api.csproj"
               }
             }
           }

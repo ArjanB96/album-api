@@ -1,0 +1,11 @@
+D:\Github\album-api\Album.Api\bin\Debug\net5.0\publish\Album.Api.exe
+D:\Github\album-api\Album.Api\bin\Debug\net5.0\publish\appsettings.Development.json
+D:\Github\album-api\Album.Api\bin\Debug\net5.0\publish\appsettings.json
+D:\Github\album-api\Album.Api\bin\Debug\net5.0\publish\Album.Api.dll
+D:\Github\album-api\Album.Api\bin\Debug\net5.0\publish\Album.Api.deps.json
+D:\Github\album-api\Album.Api\bin\Debug\net5.0\publish\Album.Api.runtimeconfig.json
+D:\Github\album-api\Album.Api\bin\Debug\net5.0\publish\Album.Api.pdb
+D:\Github\album-api\Album.Api\bin\Debug\net5.0\publish\Microsoft.OpenApi.dll
+D:\Github\album-api\Album.Api\bin\Debug\net5.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+D:\Github\album-api\Album.Api\bin\Debug\net5.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Github\album-api\Album.Api\bin\Debug\net5.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
