@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\album-api\\Album.Api.Tests\\Album.Api.Tests.csproj": {}
+    "D:\\github\\album-api\\album.api.tests\\Album.Api.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Github\\album-api\\Album.Api.Tests\\Album.Api.Tests.csproj": {
+    "D:\\github\\album-api\\album.api.tests\\Album.Api.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\album-api\\Album.Api.Tests\\Album.Api.Tests.csproj",
+        "projectUniqueName": "D:\\github\\album-api\\album.api.tests\\Album.Api.Tests.csproj",
         "projectName": "Album.Api.Tests",
-        "projectPath": "D:\\Github\\album-api\\Album.Api.Tests\\Album.Api.Tests.csproj",
+        "projectPath": "D:\\github\\album-api\\album.api.tests\\Album.Api.Tests.csproj",
         "packagesPath": "C:\\Users\\Aart\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\album-api\\Album.Api.Tests\\obj\\",
+        "outputPath": "D:\\github\\album-api\\album.api.tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aart\\AppData\\Roaming\\NuGet\\NuGet.Config",

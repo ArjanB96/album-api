@@ -3,8 +3,9 @@
     "",
     "\\Album.Api",
     "\\Album.Api.Tests",
-    "\\Album.Api\\Controllers"
+    "\\Album.Api\\Controllers",
+    "\\Album.Api\\Services"
   ],
-  "SelectedNode": "\\Album.Api\\Controllers\\WeatherForecastController.cs",
+  "SelectedNode": "\\Album.Api\\Services\\GreetingService.cs",
   "PreviewInSolutionExplorer": false
 }
