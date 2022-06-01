@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
+using Album.Api.Services;
 
 // https://localhost:5011/api/hello?name=Arjan To test
 
@@ -23,7 +24,7 @@ namespace Album.Api.Controllers
         public string Get(string name)
         {
             _logger.LogInformation($"GET used with name {name} on {DateTime.UtcNow}");
-            return new GreetingService().Greet(name);
+            return "";
         }
     }
 }

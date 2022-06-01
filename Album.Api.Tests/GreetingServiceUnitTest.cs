@@ -9,14 +9,33 @@ namespace Album.Api.Tests
         [Fact]
         public void Greet_With_Correct_Name_Should_Greet_Name()
         {
-            //Arrange
+            // Given
             string name = "Arjan";
 
-            //Act
+            // When
             string greeting = GreetingService.Greet(name);
 
-            //Assert
-            Assert.Equal("Arjan", greeting, $"The name {name} is not valid");
+            // Then
+            Assert.Equal("Hello Arjan!", greeting);
+        }
+
+        [Fact]
+        public void Greet_With_Null_Empty_Or_WhiteSpace_Should_Return_Hello_World()
+        {
+            // Given
+            string nameEmpty = "";
+            string nameWhitespace = " ";
+            string nameNull = null;
+
+            // When
+            string greetingEmpty = GreetingService.Greet(nameEmpty);
+            string greetingWhitespace = GreetingService.Greet(nameWhitespace);
+            string greetingNull = GreetingService.Greet(nameNull);
+
+            // Then
+            Assert.Equal("Hello World!", greetingEmpty);
+            Assert.Equal("Hello World!", greetingWhitespace);
+            Assert.Equal("Hello World!", greetingNull);
         }
     }
 }
