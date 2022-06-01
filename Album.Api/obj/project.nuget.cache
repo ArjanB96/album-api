@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uMlofioSPW6rf2bVgC7cbzICYDALeH1ksNmJjUXJuXnSYO0TwPDk2A5ER8bLXPXRtUO0wJmeSQHVbHvaC+GKnA==",
+  "dgSpecHash": "n/q3QWQuo2ziNXmA8+RmHHLuTP440Ywst8WFpXjMl9CbO44ifGZ/vp31cTVggy2ietIU1qmAeWO0K+opDYH0HQ==",
   "success": true,
-  "projectFilePath": "D:\\Github\\album-api-old\\Album.Api\\Album.Api.csproj",
+  "projectFilePath": "D:\\Github\\album-api\\Album.Api\\Album.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aart\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Aart\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

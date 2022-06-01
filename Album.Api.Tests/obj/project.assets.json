@@ -6123,11 +6123,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\album-api-old\\album.api.Tests\\album.api.Tests.csproj",
+      "projectUniqueName": "D:\\Github\\album-api\\album.api.Tests\\album.api.Tests.csproj",
       "projectName": "album.api.Tests",
-      "projectPath": "D:\\Github\\album-api-old\\album.api.Tests\\album.api.Tests.csproj",
+      "projectPath": "D:\\Github\\album-api\\album.api.Tests\\album.api.Tests.csproj",
       "packagesPath": "C:\\Users\\Aart\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\album-api-old\\album.api.Tests\\obj\\",
+      "outputPath": "D:\\Github\\album-api\\album.api.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aart\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6144,8 +6144,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Github\\album-api-old\\Album.Api\\Album.Api.csproj": {
-              "projectPath": "D:\\Github\\album-api-old\\Album.Api\\Album.Api.csproj"
+            "D:\\Github\\album-api\\Album.Api\\Album.Api.csproj": {
+              "projectPath": "D:\\Github\\album-api\\Album.Api\\Album.Api.csproj"
             }
           }
         }

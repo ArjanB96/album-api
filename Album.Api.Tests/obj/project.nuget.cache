@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1DNEx/PW2e5q0OyBgk0MRTqEpnEhXLEDkSRS5IZ3vOeklQTVzRPYSWLavbic1EbPR2Jliby8s/KvJF+pAC05DQ==",
+  "dgSpecHash": "YZPp8yER5tLQDn8R2tH36quj3U7oNcH6JuRoiCSFtrpJ0wL4I9WsIewZp/rm3sdwpDtWvqNT72l5sHWZG/MGkQ==",
   "success": true,
-  "projectFilePath": "D:\\Github\\album-api-old\\album.api.Tests\\album.api.Tests.csproj",
+  "projectFilePath": "D:\\Github\\album-api\\album.api.Tests\\album.api.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aart\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Aart\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
