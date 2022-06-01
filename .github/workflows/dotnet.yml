@@ -21,12 +21,12 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: ./album.api.Tests
+      working-directory: ./Album.Api.Tests
 
     - name: Build
       run: dotnet build --no-restore
-      working-directory: ./album.api.Tests
+      working-directory: ./Album.Api.Tests
       
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      working-directory: ./album.api.Tests
+      working-directory: ./Album.Api.Tests
