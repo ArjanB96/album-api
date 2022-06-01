@@ -23,5 +23,6 @@ jobs:
       working-directory: ./Album.Api.Tests
     - name: Build
       run: dotnet build --no-restore
+      working-directory: ./Album.Api.Tests
     - name: Test
       run: dotnet test --no-build --verbosity normal
