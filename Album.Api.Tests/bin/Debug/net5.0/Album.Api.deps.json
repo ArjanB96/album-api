@@ -31,7 +31,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "Album.Api/1.0.0": {
+      "album.api/1.0.0": {
         "dependencies": {
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -319,10 +319,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "Album.Api.dll": {}
+          "album.api.dll": {}
         },
         "compile": {
-          "Album.Api.dll": {}
+          "album.api.dll": {}
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
@@ -2085,7 +2085,7 @@
     }
   },
   "libraries": {
-    "Album.Api/1.0.0": {
+    "album.api/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "album.api.Tests/1.0.0": {
+      "Album.Api.Tests/1.0.0": {
         "dependencies": {
           "Album.Api": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.9.4",
@@ -15,7 +15,7 @@
           "xunit.runner.visualstudio": "2.4.3"
         },
         "runtime": {
-          "album.api.Tests.dll": {}
+          "Album.Api.Tests.dll": {}
         }
       },
       "coverlet.collector/3.0.2": {},
@@ -1142,13 +1142,13 @@
           "Swashbuckle.AspNetCore": "5.6.3"
         },
         "runtime": {
-          "Album.Api.dll": {}
+          "album.api.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "album.api.Tests/1.0.0": {
+    "Album.Api.Tests/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
