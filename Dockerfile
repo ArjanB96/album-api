@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
-COPY album-api/Album.Api/bin/Debug/net5.0/publish/ App/
+COPY Album.Api/bin/Debug/net5.0/publish/ App/
 
 WORKDIR /App
 
