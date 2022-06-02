@@ -33,3 +33,23 @@ jobs:
 
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag album-api:1.0
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-acces-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
+        aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+        aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
+        aws-region: us-east-1
+
+    - name: Login to Amazon ECR
+      uses: aws-actions/amazon-ecr-login@v1
+
+    - name: Push image to ECR
+      env:
+        ECR_REGISTRY: ${{steps.login-ecr.outputs.registry}}
+        ECR_REPOSITORY: ${{cnsd/album}}
+        IMAGE_TAG: ${{github.run_number}}
+      run: |
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
