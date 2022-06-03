@@ -11,7 +11,7 @@ namespace Album.Api.Tests
         {
             // Given
             string name = "Arjan";
-
+            var = Dns.GetHostName();
             // When
             string greeting = GreetingService.Greet(name);
 
