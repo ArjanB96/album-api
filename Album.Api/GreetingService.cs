@@ -3,9 +3,11 @@ using System.Net;
 
 namespace Album.Api
 {
-    public static class GreetingService
+    public class GreetingService
     {
-        public static string Greet(string name)
+        public GreetingService() { }
+
+        public string Greet(string name)
         {
             if (name == "" || name == " " || name == null)
                 return "Hello World!";

@@ -7,23 +7,17 @@ using System;
 
 namespace Album.Api.Controllers
 {
-    [ApiController]
-    [Route("api/hello")]
-
     public class HelloController : Controller
     {
-        private readonly ILogger _logger;
-
-        public HelloController(ILogger<HelloController> logger)
+        [HttpGet("/api/hello")]
+        public IActionResult Index(string name)
         {
-            _logger = logger;
-        }
-
-        [HttpGet]
-        public string Get(string name)
-        {
-            _logger.LogInformation($"GET used with name {name} on {DateTime.UtcNow}");
-            return "";
+            var greetingService = new GreetingService();
+            var result = greetingService.Greet(name);
+            return Ok(result);
         }
     }
 }
+
+
+  
