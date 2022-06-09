@@ -10,7 +10,7 @@ namespace Album.Api
             if (name == "" || name == " " || name == null)
                 return "Hello World!";
             else
-                return $"Hello {name} from {Dns.GetHostName()}!";
+                return $"Hello {name} from {Dns.GetHostName()} v2!";
         }
     }
 }

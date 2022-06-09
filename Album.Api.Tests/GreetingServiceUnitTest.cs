@@ -18,7 +18,7 @@ namespace Album.Api.Tests
             string greeting = greetingService.Greet(name);
 
             // Then
-            Assert.Equal("Hello {name} from {hostname}!", greeting);
+            Assert.Equal("Hello {name} from {hostname} v2!", greeting);
         }
 
         [Fact]
