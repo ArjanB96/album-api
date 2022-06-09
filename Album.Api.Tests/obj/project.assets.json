@@ -6144,8 +6144,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Github\\album-api\\Album.Api\\Album.Api.csproj": {
-              "projectPath": "D:\\Github\\album-api\\Album.Api\\Album.Api.csproj"
+            "D:\\github\\album-api\\Album.Api\\Album.Api.csproj": {
+              "projectPath": "D:\\github\\album-api\\Album.Api\\Album.Api.csproj"
             }
           }
         }

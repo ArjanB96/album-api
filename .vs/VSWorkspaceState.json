@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
     "\\Album.Api",
-    "\\Album.Api.Tests"
+    "\\Album.Api\\Controllers"
   ],
-  "SelectedNode": "\\Album.Api.Tests",
+  "SelectedNode": "\\Album.Api\\GreetingService.cs",
   "PreviewInSolutionExplorer": false
 }

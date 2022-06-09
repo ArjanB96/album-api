@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using Album.Api;
+using System.Net;
 
 namespace Album.Api.Tests
 {
@@ -11,12 +12,13 @@ namespace Album.Api.Tests
         {
             // Given
             string name = "Arjan";
-            var = Dns.GetHostName();
+            var hostname = Dns.GetHostName();
             // When
-            string greeting = GreetingService.Greet(name);
+            var greetingService = new GreetingService();
+            string greeting = greetingService.Greet(name);
 
             // Then
-            Assert.Equal("Hello {name} from {Dns.GetHostName()}!", greeting);
+            Assert.Equal("Hello {name} from {hostname}!", greeting);
         }
 
         [Fact]
@@ -28,9 +30,10 @@ namespace Album.Api.Tests
             string nameNull = null;
 
             // When
-            string greetingEmpty = GreetingService.Greet(nameEmpty);
-            string greetingWhitespace = GreetingService.Greet(nameWhitespace);
-            string greetingNull = GreetingService.Greet(nameNull);
+            var greetingService = new GreetingService();
+            string greetingEmpty = greetingService.Greet(nameEmpty);
+            string greetingWhitespace = greetingService.Greet(nameWhitespace);
+            string greetingNull = greetingService.Greet(nameNull);
 
             // Then 
             Assert.Equal("Hello World!", greetingEmpty);
