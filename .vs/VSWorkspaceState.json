@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Album.Api",
-    "\\Album.Api\\Controllers"
+    "\\Album.Api\\Controllers",
+    "\\Album.Api\\Models"
   ],
-  "SelectedNode": "\\Album.Api\\GreetingService.cs",
+  "SelectedNode": "\\Album.Api\\Album.Api.csproj",
   "PreviewInSolutionExplorer": false
 }
