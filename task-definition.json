@@ -25,7 +25,12 @@
         "command": null,
         "linuxParameters": null,
         "cpu": 0,
-        "environment": [],
+        "environment": [
+          {
+            "name": "CONNECTIONSTRINGS__DEFAULTCONNECTION",
+            "value": "Host=cnsd-db-1965795.cd4msfhbkrhs.us-east-1.rds.amazonaws.com;Database=albumdatabase;Username=postgres;Password=postgres"
+          }
+        ],
         "resourceRequirements": null,
         "ulimits": null,
         "dnsServers": null,

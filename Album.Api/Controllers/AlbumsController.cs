@@ -6,100 +6,122 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Album.Api.Models;
+using Album.Api;
 
 namespace Album.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class AlbumsController : ControllerBase
     {
-        private readonly AlbumContext _context;
+        private readonly AlbumService _albumService;
 
         public AlbumsController(AlbumContext context)
         {
-            _context = context;
+            _albumService = new AlbumService(context);
         }
 
+        /// <summary>
+        /// Retrieves all albums stored in the database
+        /// </summary>
+        /// <response code="200">Succes</response>
         // GET: api/Albums
+
         [HttpGet]
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+
         public async Task<ActionResult<IEnumerable<Models.Album>>> GetAlbums()
         {
-            return await _context.Albums.ToListAsync();
+            await _albumService.GetAlbums();
         }
 
+        /// <summary>
+        /// Retrieves the album with the given id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <response code="200">Succes</response>
+        /// <response code="400">If the id or album is null</response>
+        /// <remarks>for example: id = 3</remarks>
+       
         // GET: api/Albums/5
+
         [HttpGet("{id}")]
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
         public async Task<ActionResult<Models.Album>> GetAlbum(int id)
         {
-            var album = await _context.Albums.FindAsync(id);
-
-            if (album == null)
-            {
-                return NotFound();
-            }
-
-            return album;
+            await _albumService.GetAlbum(id);
         }
 
+        /// <summary>
+        /// Adds an album to the database
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="album"></param>
+        /// <response code="200">Succes</response>
+        /// <response code="400">If the id or album is null</response>
+        /// <remarks>for example: id = 3</remarks>
+        /// 
         // PUT: api/Albums/5
+
         [HttpPut("{id}")]
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
         public async Task<IActionResult> PutAlbum(int id, Models.Album album)
         {
-            if (id != album.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(album).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!AlbumExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            await _albumService.PutAlbum(id, album);
         }
+
+        /// <summary>
+        /// Adds an album to the database
+        /// </summary>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>
 
         // POST: api/Albums
+
         [HttpPost]
+
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
         public async Task<ActionResult<Models.Album>> PostAlbum(Models.Album album)
         {
-            _context.Albums.Add(album);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetAlbum", new { id = album.Id }, album);
+            await _albumService.PostAlbum(album);
         }
+
+        /// <summary>
+        /// Deletes an album to the database
+        /// </summary>
+        /// <response code="400">If the id is null</response>
+        /// <remarks>for example: id = 3</remarks>
 
         // DELETE: api/Albums/5
+
         [HttpDelete("{id}")]
+
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
         public async Task<IActionResult> DeleteAlbum(int id)
         {
-            var album = await _context.Albums.FindAsync(id);
-            if (album == null)
-            {
-                return NotFound();
-            }
-
-            _context.Albums.Remove(album);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            await _albumService.DeleteAlbum(id);
         }
-
+        /// <summary>
+        /// Check if a given albumid is in the database. Returns true if it is, else false
+        /// </summary>
+        /// <remarks>for example: id = 3</remarks>
+        /// <response code="400">If the id is null</response>
+        /// <param name="id"></param>
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         private bool AlbumExists(int id)
         {
-            return _context.Albums.Any(e => e.Id == id);
+            return _albumService.Albums.Any(e => e.Id == id);
         }
     }
 }

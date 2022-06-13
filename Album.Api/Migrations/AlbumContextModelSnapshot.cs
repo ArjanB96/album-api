@@ -20,8 +20,10 @@ namespace Album.Api.Migrations
 
             modelBuilder.Entity("Album.Api.Models.Album", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("text");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("Artist")
                         .HasColumnType("text");
