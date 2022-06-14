@@ -11,6 +11,15 @@ using Album.Api;
 
 namespace Album.Api
 {
+    public interface IAlbumService
+    {
+        public Task<ActionResult<IEnumerable<Models.Album>>> GetAlbums();
+        public Task<ActionResult<Models.Album>> GetAlbum(int id);
+        public Task<IActionResult> PutAlbum(int id, Models.Album album);
+        public Task<ActionResult<Models.Album>> PostAlbum(Models.Album album);
+        public Task<IActionResult> DeleteAlbum(int id);
+        public bool AlbumExists(int id);
+    }
     public class AlbumService : ControllerBase, IAlbumService
     {
         private readonly AlbumContext _context;
@@ -83,15 +92,5 @@ namespace Album.Api
             _context.Albums.Any(e => e.Id == id);
 
         
-    }
-
-    public interface IAlbumService
-    {
-        public Task<ActionResult<IEnumerable<Models.Album>>> GetAlbums();
-        public Task<ActionResult<Models.Album>> GetAlbum(int id);
-        public Task<IActionResult> PutAlbum(int id, Models.Album album);
-        public Task<ActionResult<Models.Album>> PostAlbum(Models.Album album);
-        public Task<IActionResult> DeleteAlbum(int id);
-        public bool AlbumExists(int id);
     }
 }

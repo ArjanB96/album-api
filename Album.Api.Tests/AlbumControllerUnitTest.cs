@@ -14,9 +14,8 @@ namespace Album.Api.Tests
     public class AlbumControllerUnitTest
     {   
         [Fact]
-        public void Test1()
+        public void Mock_Data_Database_Unit_Test()
         {
-            // mock the database
             var options = new DbContextOptionsBuilder<AlbumContext>()
                 .UseInMemoryDatabase(databaseName: "postgres")
                 .Options;
@@ -33,9 +32,6 @@ namespace Album.Api.Tests
                 Assert.Equal(2, context.Albums.Count());
             }
         }
+        // test to create api endpoint
     }
 }
-
-        
-
-//string connectionString =  "Host=cnsd-db-1965795.cd4msfhbkrhs.us-east-1.rds.amazonaws.com;Database=albumdatabase;Username=postgres;Password=postgres";
