@@ -12,9 +12,6 @@ namespace Album.Api.Models
     {
         public DbSet<Album> Albums { get; set; }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-           //=> optionsBuilder.UseNpgsql("Host=cnsd-db-1965795.cd4msfhbkrhs.us-east-1.rds.amazonaws.com;Database=albumdatabase;Username=postgres;Password=postgres");
-
         public AlbumContext(DbContextOptions<AlbumContext> options) : base(options) { }
     }
 
