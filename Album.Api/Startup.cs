@@ -48,9 +48,9 @@ namespace Album.Api
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseCors(policy => policy
+                .WithOrigins("http://cnsd-react-app-4742-7680-6263.s3-website-us-east-1.amazonaws.com/)
                 .AllowAnyMethod()
-                .AllowAnyHeader()
-                .AllowAnyOrigin());
+                .AllowAnyHeader()); 
                 
             if (env.IsDevelopment())
             {
